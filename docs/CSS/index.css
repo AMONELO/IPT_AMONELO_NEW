@@ -1,0 +1,388 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Button Style */
+.nav-btn {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Style */
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Centered Title */
+.nav-title h1 {
+    color: #00aaff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+    letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Main Content Section (Intro) */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background-image: url("IMAGES/Astronaut.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left Section (Profile Picture) */
+.intro-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Picture Styling */
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section (Form for About Me) */
+.intro-right {
+    flex: 1;
+}
+
+/* Form Styling for About Me */
+.intro-form {
+    background-image: url("IMAGES/wp486145-cyber-security-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+}
+
+/* Form Heading */
+.intro-form h2 {
+    font-size: 36px;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+/* Form Paragraph */
+.intro-form p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #eee;
+}
+
+/* New Section with Form and Image */
+.new-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background-image: url("IMAGES/Astronaut.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left Section (Form for Projects) */
+.new-section-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Styling for Projects */
+.new-section-form {
+    background-image: url("IMAGES/wp486145-cyber-security-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+}
+
+/* Right Section (Image) */
+.new-section-right {
+    flex: 1;
+}
+
+/* Image Styling in New Section */
+.new-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-picture {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* New Experience Section */
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url("IMAGES/Astronaut.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Left Section (Experience Form) */
+.experience-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Styling for Experience */
+.experience-form {
+    background-image: url("IMAGES/wp486145-cyber-security-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+}
+
+/* Right Section (Experience Image) */
+.experience-right {
+    flex: 1;
+}
+
+/* Image Styling in Experience Section */
+.experience-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-picture {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* New Section with Four Images in Two Rows */
+.image-section-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-image: url("IMAGES/Astronaut.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.image-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .intro, .new-section, .experience-section, .image-section-four {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .intro-left, .intro-right, .new-section-left, .new-section-right, .experience-left, .experience-right {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .profile-picture, .new-picture, .experience-picture {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styling for Latest Projects header */
+.projects-header {
+    font-size: 36px;
+    color: #00aaff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* New Section with Form and Content */
+.form-section-below-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    background-image: url("IMAGES/Astronaut.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.additional-project-form {
+    background-image: url("IMAGES/dark.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.new-section-content {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
